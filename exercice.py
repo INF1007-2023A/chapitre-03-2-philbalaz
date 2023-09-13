@@ -32,7 +32,7 @@ def bills(value):
 
 	ones = value
 
-	return (twenties, tens, fives, twos, ones);
+	return (twenties, tens, fives, twos, ones)
 
 def format_base(value, base, digit_letters):
 	# Formater un nombre dans une base donné en utilisant les lettres fournies pour les chiffres<
