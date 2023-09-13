@@ -40,11 +40,13 @@ def format_base(value, base, digit_letters):
 	result = ""
 	abs_value = abs(value)
 	while abs_value != 0:
-		pass
+		digit_value = abs_value % 16
+		result += digit_letters[digit_value]
+		abs_value //= base
 	if value < 0:
 		# TODO: Ne pas oublier d'ajouter '-' devant pour les nombres négatifs.
-		pass
-	return result
+		result += "-"
+	return result[::-1]
 
 
 if __name__ == "__main__":
